@@ -12,7 +12,8 @@ public class Employee {
         this.id = id;
     }
     void setRandomSalary() {
-        this.salary = Salary.a[(int)(Math.random()*5)];
+        this.salary = (int)((Math.random()*2001) + 500)*100;   //изначально я генерировал зарплату из тех 5 вариантов, которые
+                                                               //были просто примером
     }
     void setSalary(int salary){
         this.salary = salary;
